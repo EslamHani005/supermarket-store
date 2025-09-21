@@ -1,0 +1,20 @@
+<div class="row ">  
+    <div class="card m-2 col-lg-3" className="cardItem" *ngFor="let product of products">
+        <img src="{{product.urlImage}}" class="card-img-top">  
+        <div class="card-body" [style.background-color]="(product.amount==0)?'red':'white'">
+            <p><strong>Name : </strong>{{product.name}}</p> 
+            <div [ngSwitch]="product.amount"> 
+                <p *ngSwitchCase="1"><strong>Quantity : </strong>Last Item</p>
+                <p *ngSwitchDefault="1"><strong>Quantity : </strong>{{product.amount}}</p>
+            </div>    
+            <p><strong>Price : </strong>{{product.price}} $/kg</p> 
+        </div> 
+        <div class="card-footer bg-white "> 
+            <div class="d-flex">
+                 <input type="number" #counterInt class="form-control form-control-sm w-2 m-1" >
+                 <button type="button"  class="btn btn-success  p-2 m-1" [disabled]="(product.amount==0)?true:false">Buy</button> 
+                 <button type="button" class="btn btn-success p-2 m-1" >Details</button>
+            </div> 
+        </div>
+    </div>
+</div>  

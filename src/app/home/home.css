@@ -1,0 +1,79 @@
+.carousel-caption {
+  bottom: 30%;
+  left: 5%;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.carousel-caption .btn {
+  font-weight: bold;
+}
+#heroCarousel {
+  max-height: 500px; /* الحد الأقصى للارتفاع */
+  overflow: hidden;   /* يخفي أي جزء زايد */
+}
+
+#heroCarousel .carousel-item img {
+  height: 500px;      /* ارتفاع الصورة نفسها */
+  object-fit: cover;  /* يملأ المكان بدون تشويه الصورة */
+  width: 100%;
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+#flashDealsCarousel {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+#flashDealsCarousel .carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#flashDealsCarousel .carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#flashDealsCarousel .carousel-caption p {
+  font-size: 1rem;
+}
+section h2 {
+  font-size: 2.5rem;
+}
+
+section h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1rem;
+}
+/* home.component.css */
+#youtube-player {
+  max-height: 400px; /* أقل من default 16x9 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+

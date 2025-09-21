@@ -1,0 +1,28 @@
+<h1>Categories</h1>
+
+<div class="mb-3 mt-3">
+  <select class="form-select form-select-lg" (change)="getFilterProductu()" [(ngModel)]="selectCatId">
+    <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+  </select>
+</div>
+
+<div class="row ">  
+    <div class="card m-2 col-lg-3" className="cardItem" *ngFor="let product of filterProducts" [class.d-none]="product.catId!=selectCatId">
+        <img [src]="product.urlImage" class="card-img-top">  
+        <div class="card-body" [style.background-color]="(product.amount==0)?'red':'white'">
+            <p><strong>Name : </strong>{{product.name}}</p> 
+            <div [ngSwitch]="product.amount"> 
+                <p *ngSwitchCase="1"><strong>Available quantity : </strong>Last Item</p>
+                <p *ngSwitchDefault><strong>Available quantity : </strong>{{product.amount}}</p>
+            </div>     
+            <p><strong>Price : </strong>{{product.price}} $/kg</p> 
+        </div> 
+        <div class="card-footer bg-white "> 
+            <div class="d-flex">
+                 <input type="number" #counterInt class="form-control form-control-sm w-2 m-1" min="1" [max]="product.amount" value="1">
+                 <button type="button"  class="btn btn-success  p-2 m-1" [disabled]="(product.amount==0)?true:false" (click)="handleBuy(counterInt.value,product.id)">Buy</button> 
+                 <button type="button" class="btn btn-success p-2 m-1" (click)="navigateToDetails(product.id)">Details</button>
+            </div> 
+        </div>
+    </div>
+</div>  

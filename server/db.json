@@ -1,0 +1,31 @@
+{
+    "products":[
+        {"id":1,"name":"potato","urlImage":"","amount":20,"price":20,"catId":1},
+        {"id":2,"name":"cucumber","urlImage":"","amount":20,"price":25,"catId":1},
+        {"id":3,"name":"carrot","urlImage":"","amount":10,"price":30,"catId":1},
+        {"id":4,"name":"tomato","urlImage":"","amount":60,"price":15,"catId":1},
+        {"id":5,"name":"karnapit","urlImage":"","amount":0,"price":50,"catId":1},
+        {"id":6,"name":"red onion","urlImage":"","amount":70,"price":17,"catId":1},
+        {"id":7,"name":"yellow onion","urlImage":"","amount":50,"price":20,"catId":1},
+        {"id":8,"name":"meat1","urlImage":"","amount":20,"price":20,"catId":2},
+        {"id":9,"name":"meat2","urlImage":"","amount":0,"price":25,"catId":2},
+        {"id":10,"name":"meat3","urlImage":"","amount":1,"price":30,"catId":2},
+        {"id":11,"name":"meat4","urlImage":"","amount":60,"price":15,"catId":2},
+        {"id":12,"name":"meat5","urlImage":"","amount":0,"price":50,"catId":2},
+        {"id":13,"name":"meat6","urlImage":"","amount":10,"price":17,"catId":2},
+        {"id":14,"name":"meat7","urlImage":"","amount":1,"price":20,"catId":2}, 
+        {"id":15,"name":"apple","urlImage":"","amount":20,"price":20,"catId":3},
+        {"id":16,"name":"banana","urlImage":"","amount":0,"price":25,"catId":3},
+        {"id":17,"name":"fruit3","urlImage":"","amount":1,"price":30,"catId":3},
+        {"id":18,"name":"fruit4","urlImage":"","amount":6,"price":15,"catId":3},
+        {"id":19,"name":"fruit5","urlImage":"","amount":30,"price":50,"catId":3},
+        {"id":20,"name":"fruit6","urlImage":"","amount":1,"price":17,"catId":3},
+        {"id":21,"name":"fruit6","urlImage":"","amount":5,"price":17,"catId":3},
+        {"id":22,"name":"fruit6","urlImage":"","amount":40,"price":17,"catId":3}
+    ],
+    "category":[
+        {"id":1,"name":"vegetables"},
+      {"id":2,"name":"meats"},
+      {"id":3,"name":"fruits"}
+    ]
+}

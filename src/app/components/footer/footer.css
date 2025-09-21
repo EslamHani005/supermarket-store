@@ -1,0 +1,87 @@
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+footer strong {
+  color: #ffdd57;
+} 
+
+/* =========================
+   Responsive Adjustments
+========================= */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-item .badge {
+    font-size: 0.65rem;
+  }
+}
+.footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1b5e20; /* أخضر غامق */
+  color: #fff;
+}
+
+.footer h5 {
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffdd57; /* تأثير hover أصفر */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2e7d32;
+  color: #fff;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #ffdd57;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.footer hr {
+  margin: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .footer .row > div {
+    text-align: center;
+  }
+
+  .footer .d-flex {
+    justify-content: center;
+  }
+}

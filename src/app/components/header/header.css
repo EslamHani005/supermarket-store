@@ -1,0 +1,36 @@
+.navbar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #ffffff !important;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffdd57 !important;
+  transform: scale(1.05);
+}
+
+.navbar-nav .active {
+  color: #ffdd57 !important;
+  font-weight: 600;
+}
+
+/* =========================
+   Cart Badge
+========================= */
+.nav-item .badge {
+  font-size: 0.7rem;
+  padding: 0.25em 0.5em;
+}
